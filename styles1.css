@@ -1,0 +1,492 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: wheat;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    background-color: white;
+    color: black;
+}
+
+/* Navbar styles */
+.navbar-desktop {
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Navbar links styles */
+.navbar-desktop a {
+    float: none;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 15px; /* Adjust padding as needed */
+    text-decoration: none;
+}
+
+.navbar-desktop a:hover {
+    background-color: #ddd;
+    text-decoration: underline;
+}
+
+.search-container {
+    display: inline-block;
+    margin-right: 20px; /* Add some space between search bar and last navbar item */
+}
+
+/* Search input styles */
+.search-container input[type=text] {
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+/* Search button styles */
+.search-container button {
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+/* Style the search button on hover */
+.search-container button:hover {
+    background: #ddd;
+    color: #333;
+}
+
+/* Hamburger menu styles for mobile */
+.menu-icon {
+    display: none; /* Initially hide the menu icon */
+    font-size: 24px;
+    
+    color: black;
+    cursor: pointer;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.navbar-mobile {
+    display: none; /* Initially hide the mobile navbar */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown on hover (desktop) */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* Carousel */
+.fade {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    
+  }
+ 
+
+  .cart-icon {
+    position: relative;
+    color: white;
+    font-size: 24px;
+    padding-right: 2px;
+    padding-top: 20px;
+  }
+  
+  .cart-icon .cart-count {
+    position: absolute;
+    
+    background-color: white;
+    color: white;
+    border-radius: 50%;
+    
+    font-size: 14px;
+  }
+
+  .main-image .slick-next{
+
+    right: 0;
+  }
+
+  h2{
+
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+
+
+/* Container for all products */
+.Products {
+    display: flex;          /* Use Flexbox layout */
+    flex-wrap: nowrap;      /* Prevent wrapping to ensure items fit in a single row */
+    gap: 40px;              /* Add space between items */
+    justify-content: center;/* Center items horizontally */
+    padding: 10px;          /* Optional: padding around the container */
+    overflow-x: auto;       /* Allow horizontal scrolling if items exceed container width */
+}
+
+/* Individual product item containers */
+.Products > div {
+    flex: 0 0 auto;         /* Prevent shrinking */
+    max-width: 20%;         /* Set width to fit four items side by side */
+    min-width: 180px;       /* Ensure a minimum width for small screens */
+    background: #f9f9f9;    /* Background color for the box */
+    padding: 10px;          /* Padding inside the box */
+    border-radius: 8px;     /* Rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the box */
+    text-align: center;     /* Center content in the box */
+    border: 1px solid #ddd; /* Border around the box */
+}
+
+/* Styling for images */
+.Products img {
+    width: 100%;            /* Ensure images fill their container */
+    height: auto;           /* Maintain aspect ratio */
+    border-radius: 5px;     /* Rounded corners */
+    margin-bottom: 10px;    /* Space between image and text */
+}
+
+/* Paragraph styling for descriptions */
+.Products p {
+    text-align: center;     /* Center text below the images */
+    margin: 0;              /* Remove margin for compact layout */
+    font-family: Arial, sans-serif; /* Font */
+    font-size: 14px;        /* Font size */
+    color: #333;            /* Text color */
+}
+
+
+.furniture img {
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h3{
+
+    text-align: center;
+    padding-top: 15px ;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-style: normal;
+    color: grey;
+
+}
+
+
+
+
+.collection {
+    display: flex;              
+    gap: 20px;                  
+    align-items: center;    
+    padding: 10px; 
+    justify-content: center;             
+}
+
+
+.single_image {
+            
+    text-align: center;   
+    height: 50%;
+    width: 50%;      
+    max-height: fit-content;
+}
+
+.multiple_images {
+    display: flex;              
+    flex-direction: column;     
+    justify-content: space-between; 
+              
+}
+
+
+
+
+.blog {
+    display: flex;          /* Use Flexbox layout */
+    flex-wrap: nowrap;      /* Prevent wrapping to ensure items fit in a single row */
+    gap: 20px;              /* Add space between items */
+    justify-content: center;/* Center items horizontally */
+    padding: 10px;          /* Optional: padding around the container */
+    overflow-x: auto;       /* Allow horizontal scrolling if items exceed container width */
+}
+
+/* Individual product item containers */
+.blog-item {
+    flex: 0 0 auto;         /* Prevent shrinking */
+    max-width: 30%;         /* Set width to fit four items side by side */
+    min-width: 180px;       /* Ensure a minimum width for small screens */
+    background: #f9f9f9;    /* Background color for the box */
+    padding: 10px;          /* Padding inside the box */
+    border-radius: 8px;     /* Rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the box */
+    text-align: center;     /* Center content in the box */
+    border: 1px solid #ddd; /* Border around the box */
+}
+
+/* Styling for images */
+.blog-item img {
+    width: 100%;            /* Ensure images fill their container */
+    height: auto;           /* Maintain aspect ratio */
+    border-radius: 5px;     /* Rounded corners */
+    margin-bottom: 10px;    /* Space between image and text */
+}
+
+/* Paragraph styling for descriptions */
+.blog-item p {
+    text-align: center;     /* Center text below the images */
+    margin: 0;              /* Remove margin for compact layout */
+    font-family: Arial, sans-serif; /* Font */
+    font-size: 24px;        /* Font size */
+    color: #333;            /* Text color */
+}
+
+/* Container for the whole information section */
+.Information {
+    display: flex;               /* Use Flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    gap: 20px;                   /* Add space between each info group */
+    padding: 150px;               /* Optional: Padding around the container */
+    flex-wrap: wrap;             /* Allow wrapping on smaller screens */
+}
+
+/* Individual information group */
+.info-group {
+                 /* Flexible width with space for gap */
+                 /* Use Flexbox for internal layout */
+    flex-direction: column;      /* Stack items vertically */
+         /* Align items to the start (left) */
+    text-align: left;            /* Align text to the left */
+}
+
+/* Links for main topics */
+.info-group a {
+    font-weight: bold;           /* Make main topics bold */
+    font-size: 18px;             /* Set font size for main topics */
+    margin-bottom: 10px;         /* Space below the main topic */
+    color: #333;                 /* Optional: Set text color */
+    text-decoration: none;       /* Remove underline */
+}
+
+/* List of sub-items */
+.info-group ul {
+    list-style: none;            /* Remove default list styling */
+    padding: 0;                  /* Remove padding */
+    margin: 0;                   /* Remove margin */
+}
+
+/* List items */
+.info-group li {
+    margin: 15px 0;               /* Space between list items */
+    font-size: 18px;             /* Set font size for list items */
+    color: #666;                 /* Optional: Set text color */
+}
+
+
+
+.footer p{
+
+    width: 100%;
+    text-align: center;
+}
+
+
+
+ 
+ 
+  
+ 
+
+@media (max-width: 768px) {
+    .navbar-desktop {
+        display: none; /* Hide desktop navbar on smaller screens */
+    }
+
+    .navbar-mobile {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        padding: 20px; /* Adjust padding as needed */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better separation */
+        
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon */
+        
+    }
+
+    .navbar-mobile a {
+        padding-bottom: 30px; /* Adjust padding as needed */
+        margin-bottom: 2%;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        border-bottom: 1px solid #ccc; /* Add bottom border for separation */
+    }
+
+    .navbar-mobile a:last-child {
+        border-bottom: none; /* Remove bottom border from last item */
+    }
+
+    .mobile-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Adjust spacing between items */
+        background: #fff;
+        padding: 10px; /* Adjust padding as needed */
+    }
+
+   .cross{
+    display: none;
+   }
+   
+    .main-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-image .fade img {
+        width: 100%;
+        height: auto;
+    }
+
+    .collection{
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .single_image img{
+
+
+        max-width: 100%;
+    }
+
+    .multiple_images img{
+
+
+        max-width: 100%;
+    }
+
+    .Information {
+       
+        align-items: start;
+        max-width: 100%;
+    }
+
+    .info-group {
+        max-width: 47%;
+        
+        text-align: left;
+      
+    }
+    .Products {
+        flex-wrap: wrap;
+    }
+
+    .Products > div {
+        flex: 1 1 45%; 
+        min-width: 300px; 
+    }
+
+
+    /* Basic styling for the blog container */
+.blog {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.blog-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Blog item image styling */
+.blog-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the blog item text */
+.blog-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.Information {
+    display: flex;                
+    flex-wrap: wrap;              
+}
+
+ 
+.info-group {
+                   
+    display: flex;                
+    flex-direction: column;       
+    align-items: flex-start;      
+    text-align: left;             
+}
+
+}
+
+
+
+
