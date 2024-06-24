@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Body styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: wheat;
+    
+}
+
+div#header{
+
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    background-color: white;
+    color: black;
+}
+
+/* Navbar styles */
+.navbar-desktop {
+    overflow: hidden;
+    background-color: white;
+    
+}
+
+/* Navbar links styles */
+.navbar-desktop a {
+    float: none;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 15px; /* Adjust padding as needed */
+    text-decoration: none;
+}
+
+.navbar-desktop a:hover {
+    background-color: #ddd;
+    text-decoration: underline;
+}
+
+.search-container {
+    display: inline-block;
+    margin-right: 20px; /* Add some space between search bar and last navbar item */
+}
+
+/* Search input styles */
+.search-container input[type=text] {
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+/* Search button styles */
+.search-container button {
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+/* Style the search button on hover */
+.search-container button:hover {
+    background: #ddd;
+    color: #333;
+}
+
+/* Hamburger menu styles for mobile */
+.menu-icon {
+    display: none; /* Initially hide the menu icon */
+    font-size: 24px;
+    
+    color: black;
+    cursor: pointer;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.navbar-mobile {
+    display: none; /* Initially hide the mobile navbar */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown on hover (desktop) */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* Cart icon styling */
+.cart-icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1px; /* Spacing between cart and login icon */
+}
+
+/* Login icon styling */
+.login-icon img {
+    width: 20px; /* Match the size with cart icon */
+    height: 20px; /* Keep the same size */
+   
+    
+}
+
+
+
+
+ 
